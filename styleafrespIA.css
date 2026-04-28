@@ -1,0 +1,113 @@
+/* Configurações Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f4f7f9; /* Cinza bem clarinho para não cansar o olho */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabeçalho Profissional */
+header {
+    background-color: #003366; /* Azul AFRESP */
+    color: white;
+    padding: 40px 10% 60px 10%;
+    text-align: center;
+    border-bottom: 8px solid #d4af37; /* Detalhe em dourado */
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+#introducao {
+    font-size: 1.1rem;
+    max-width: 850px;
+    margin: 0 auto;
+    opacity: 0.9;
+    font-weight: 300;
+}
+.img-noticia{
+    float: left;
+    width: 300px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    border-radius: 7px;
+}
+/* Layout de Colunas (Flexbox) */
+.container-principal {
+    display: flex;
+    max-width: 1200px;
+    margin: -30px auto 40px auto; /* Sobe um pouco para sobrepor o header */
+    gap: 20px;
+    padding: 0 20px;
+}
+
+/* Coluna Principal (2/3) */
+.conteudo-principal {
+    flex: 2;
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.conteudo-principal h2 {
+    color: #003366;
+    margin-bottom: 20px;
+    border-left: 5px solid #d4af37;
+    padding-left: 15px;
+}
+
+/* Barra Lateral (1/3) */
+.barra-lateral {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    height: fit-content;
+}
+
+.barra-lateral h3 {
+    color: #003366;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px;
+}
+
+/* Lista de Notícias Secundárias */
+#notsecund {
+    list-style: none;
+}
+
+#notsecund li {
+    font-weight: bold;
+    color: #003366;
+    margin-top: 20px;
+    font-size: 1rem;
+}
+
+#notsecund p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 5px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+}
+
+/* Ajuste para Celulares (Responsividade) */
+@media (max-width: 768px) {
+    .container-principal {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+}
